@@ -1,0 +1,7 @@
+ci: true
+dry-run: false
+branches:
+  - name: main
+
+preset: 'conventionalcommits'
+tagFormat: '${version}'
