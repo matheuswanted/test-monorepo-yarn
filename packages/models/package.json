@@ -4,5 +4,9 @@
   "types": "dist/index.d.js",
   "files": [
     "dist/*"
-  ]
+  ],
+  "devDependencies": {
+    "semantic-release": "^19.0.5",
+    "semantic-release-monorepo": "^7.0.5"
+  }
 }

@@ -1240,12 +1240,17 @@ __metadata:
   resolution: "@test-monorepo/app@workspace:packages/app"
   dependencies:
     "@test-monorepo/models": "workspace:*"
+    semantic-release: ^19.0.5
+    semantic-release-monorepo: ^7.0.5
   languageName: unknown
   linkType: soft
 
 "@test-monorepo/models@workspace:*, @test-monorepo/models@workspace:packages/models":
   version: 0.0.0-use.local
   resolution: "@test-monorepo/models@workspace:packages/models"
+  dependencies:
+    semantic-release: ^19.0.5
+    semantic-release-monorepo: ^7.0.5
   languageName: unknown
   linkType: soft
 
