@@ -1,14 +1,14 @@
 {
   "name": "test-monorepo",
   "packageManager": "yarn@3.0.1",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspace @test-monorepo/app run start",
+    "start": "yarn workspace @matheuswanted-test-mono-repo/app run start",
     "build": "rm -rf packages/*/dist && tsc --build --force tsconfig.json",
     "test": "jest",
     "test:coverage": "yarn workspaces foreach run test:coverage && npx nyc report -t coverage --report-dir coverage --reporter=html --reporter=text-summary --reporter=lcov",

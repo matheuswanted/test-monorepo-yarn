@@ -731,6 +731,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@matheuswanted-test-mono-repo/app@workspace:packages/app":
+  version: 0.0.0-use.local
+  resolution: "@matheuswanted-test-mono-repo/app@workspace:packages/app"
+  dependencies:
+    "@matheuswanted-test-mono-repo/models": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@matheuswanted-test-mono-repo/models@workspace:*, @matheuswanted-test-mono-repo/models@workspace:packages/models":
+  version: 0.0.0-use.local
+  resolution: "@matheuswanted-test-mono-repo/models@workspace:packages/models"
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1234,20 +1248,6 @@ __metadata:
   checksum: 7d3aef54e17c1073101cb64d953157c19d62a40e261a30923fa1ee337b049c5f29cc47b1f0c477880f42b5659848ba9ab897607ac8ea4acd5c30ddcfac57fca6
   languageName: node
   linkType: hard
-
-"@test-monorepo/app@workspace:packages/app":
-  version: 0.0.0-use.local
-  resolution: "@test-monorepo/app@workspace:packages/app"
-  dependencies:
-    "@test-monorepo/models": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@test-monorepo/models@workspace:*, @test-monorepo/models@workspace:packages/models":
-  version: 0.0.0-use.local
-  resolution: "@test-monorepo/models@workspace:packages/models"
-  languageName: unknown
-  linkType: soft
 
 "@tootallnate/once@npm:2":
   version: 2.0.0

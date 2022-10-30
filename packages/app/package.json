@@ -1,11 +1,11 @@
 {
-  "name": "@test-monorepo/app",
+  "name": "@matheuswanted-test-mono-repo/app",
   "version": "1.2.0",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/main.js"
   },
   "dependencies": {
-    "@test-monorepo/models": "workspace:*"
+    "@matheuswanted-test-mono-repo/models": "workspace:*"
   }
 }

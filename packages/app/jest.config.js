@@ -2,5 +2,5 @@ const base = require("../../jest.config.base");
 
 module.exports = {
     ...base,
-    displayName: '@test-monorepo/app tests'
+    displayName: '@matheuswanted-test-mono-repo/app tests'
 };
