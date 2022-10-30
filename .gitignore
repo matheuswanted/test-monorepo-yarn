@@ -45,5 +45,3 @@ lerna-debug.log*
 package-lock.json
 .env.dev.local
 /static/schema.graphql
-
-.npmrc
