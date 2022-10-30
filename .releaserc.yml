@@ -13,6 +13,3 @@ publish:
   - path: '@semantic-release/npm'
     publish: false
     pkgRoot: ./packages/app
-  - path: '@semantic-release/npm'
-    publish: true
-    pkgRoot: ./packages/models
