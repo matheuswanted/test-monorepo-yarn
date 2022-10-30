@@ -1,14 +1,11 @@
 {
   "name": "@test-monorepo/app",
+  "version": "1.2.0",
   "main": "dist/index.js",
   "scripts": {
     "start": "node dist/main.js"
   },
   "dependencies": {
     "@test-monorepo/models": "workspace:*"
-  },
-  "devDependencies": {
-    "semantic-release": "^19.0.5",
-    "semantic-release-monorepo": "^7.0.5"
   }
 }
