@@ -1,0 +1,10 @@
+{
+  "name": "@test-monorepo/app",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@test-monorepo/models": "workspace:*"
+  }
+}

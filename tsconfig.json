@@ -1,0 +1,15 @@
+{
+    "files": [],
+    "exclude": [
+        "packages/**/tests/**",
+        "packages/**/dist/**"
+    ],
+    "references": [
+        {
+            "path": "packages/models/tsconfig.build.json"
+        },
+        {
+            "path": "packages/app/tsconfig.build.json"
+        }
+    ]
+}
