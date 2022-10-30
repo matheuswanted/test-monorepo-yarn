@@ -5,3 +5,14 @@ branches:
 
 preset: 'conventionalcommits'
 tagFormat: '${version}'
+
+publish:
+  - path: '@semantic-release/github'
+  - path: '@semantic-release/npm'
+    publish: false
+  - path: '@semantic-release/npm'
+    publish: false
+    pkgRoot: ./packages/app
+  - path: '@semantic-release/npm'
+    publish: true
+    pkgRoot: ./packages/models
