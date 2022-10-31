@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/matheuswanted/test-monorepo-yarn/compare/@matheuswanted/test-mono-repo-app-v1.1.0...@matheuswanted/test-mono-repo-app-v1.2.0) (2022-10-31)
+
+
+### Features
+
+* add test field ([c64502c](https://github.com/matheuswanted/test-monorepo-yarn/commit/c64502c460945f150f0b0313d19d47a0db81193a))
+
 ## [1.1.0](https://github.com/matheuswanted/test-monorepo-yarn/compare/@matheuswanted/test-mono-repo-app-v1.0.0...@matheuswanted/test-mono-repo-app-v1.1.0) (2022-10-31)
 
 
