@@ -4,7 +4,8 @@
   "main": "dist/index.js",
   "private": true,
   "scripts": {
-    "start": "node dist/main.js"
+    "start": "node dist/main.js",
+    "release": "echo 'no release configured'"
   },
   "dependencies": {
     "@matheuswanted/test-mono-repo-models": "workspace:*"

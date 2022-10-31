@@ -56,7 +56,8 @@ generateNotes:
     presetConfig: true
 
 prepare:
-  - path: '@semantic-release/npm'
+  - path: '@semantic-release/exec'
+    publishCmd: 'yarn version ${nextRelease.version}'
   - path: '@semantic-release/changelog'
     changelogFile: 'CHANGELOG.md'
   - path: '@semantic-release/git'
@@ -68,4 +69,4 @@ prepare:
 publish:
   - path: '@semantic-release/github'
   - path: '@semantic-release/exec'
-    publishCmd: 'yarn publish'
+    publishCmd: 'yarn release'
