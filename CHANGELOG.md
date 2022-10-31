@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/matheuswanted/test-monorepo-yarn/compare/1.9.0...1.10.0) (2022-10-31)
+
+
+### Features
+
+* fix release tag push ([603d5d1](https://github.com/matheuswanted/test-monorepo-yarn/commit/603d5d1c637d7a5a855bb5f290fe69abed1991bb))
+
 ## [1.9.0](https://github.com/matheuswanted/test-monorepo-yarn/compare/1.8.0...1.9.0) (2022-10-31)
 
 
