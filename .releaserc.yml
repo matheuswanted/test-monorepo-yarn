@@ -1,7 +1,7 @@
-extends: semantic-release-monorepo
 branches:
   - name: main
 
+tagFormat: '${version}'
 preset: 'conventionalcommits'
 plugins:
   - '@semantic-release/commit-analyzer'
