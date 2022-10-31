@@ -69,9 +69,3 @@ publish:
   - path: '@semantic-release/github'
   - path: '@semantic-release/exec'
     publishCmd: 'yarn release'
-
-success:
-  - '@semantic-release/github'
-
-fail:
-  - '@semantic-release/github'
