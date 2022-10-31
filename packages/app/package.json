@@ -1,6 +1,6 @@
 {
   "name": "@matheuswanted/test-mono-repo-app",
-  "version": "1.8.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "private": true,
   "scripts": {
