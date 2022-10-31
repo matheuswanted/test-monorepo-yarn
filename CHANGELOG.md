@@ -1,3 +1,15 @@
+## [1.9.0](https://github.com/matheuswanted/test-monorepo-yarn/compare/1.8.0...1.9.0) (2022-10-31)
+
+
+### Features
+
+* add test field ([c64502c](https://github.com/matheuswanted/test-monorepo-yarn/commit/c64502c460945f150f0b0313d19d47a0db81193a))
+* add test field ([2621e1e](https://github.com/matheuswanted/test-monorepo-yarn/commit/2621e1ea9fe5e177b7a3725ee1d9c929ba53746b))
+* fix release tags ([74154ff](https://github.com/matheuswanted/test-monorepo-yarn/commit/74154ff0bdd148ccdada6560f573cd046aeebaeb))
+* fix release tags ([e3a5877](https://github.com/matheuswanted/test-monorepo-yarn/commit/e3a5877924b848ca3f4621b8e97216732a688adb))
+* fix release tags ([4a9d095](https://github.com/matheuswanted/test-monorepo-yarn/commit/4a9d095fe5db5db7efd8f11f7ceaa35768992498))
+* remove monorepo semantic release ([4b4ae4f](https://github.com/matheuswanted/test-monorepo-yarn/commit/4b4ae4f4bb3ac6d1c4f89a06c18e32edde9d09a3))
+
 ## 1.0.0 (2022-10-31)
 
 
