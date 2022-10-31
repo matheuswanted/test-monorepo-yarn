@@ -56,14 +56,14 @@ generateNotes:
 
 prepare:
   - path: '@semantic-release/exec'
-    prepareCmd: 'yarn version ${nextRelease.version}'
+    prepareCmd: 'yarn workspaces foreach version ${nextRelease.version}'
   - path: '@semantic-release/changelog'
     changelogFile: 'CHANGELOG.md'
   - path: '@semantic-release/git'
     message: 'chore(release): ${nextRelease.version}'
     assets:
       - 'CHANGELOG.md'
-      - 'package.json'
+      - '**/package.json'
 
 publish:
   - path: '@semantic-release/github'

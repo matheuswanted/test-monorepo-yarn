@@ -1,6 +1,6 @@
 {
   "name": "@matheuswanted/test-mono-repo-models",
-  "version": "1.2.0",
+  "version": "1.9.0",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "files": [
@@ -8,9 +8,5 @@
   ],
   "scripts": {
     "release": "yarn npm publish --access public"
-  },
-  "devDependencies": {
-    "semantic-release": "^19.0.5",
-    "semantic-release-monorepo": "^7.0.5"
   }
 }
