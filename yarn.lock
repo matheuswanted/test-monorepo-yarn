@@ -744,11 +744,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matheuswanted/test-mono-repo-app@workspace:packages/app"
   dependencies:
-    "@commitlint/config-conventional": ^17.2.0
     "@matheuswanted/test-mono-repo-models": "workspace:*"
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/github": ^8.0.6
     semantic-release: ^19.0.5
     semantic-release-monorepo: ^7.0.5
   languageName: unknown
@@ -758,10 +754,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matheuswanted/test-mono-repo-models@workspace:packages/models"
   dependencies:
-    "@commitlint/config-conventional": ^17.2.0
-    "@semantic-release/exec": ^6.0.3
-    "@semantic-release/git": ^10.0.1
-    "@semantic-release/github": ^8.0.6
     semantic-release: ^19.0.5
     semantic-release-monorepo: ^7.0.5
   languageName: unknown

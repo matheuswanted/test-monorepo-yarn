@@ -57,7 +57,7 @@ generateNotes:
 
 prepare:
   - path: '@semantic-release/exec'
-    publishCmd: 'yarn version ${nextRelease.version}'
+    prepareCmd: 'yarn version ${nextRelease.version}'
   - path: '@semantic-release/changelog'
     changelogFile: 'CHANGELOG.md'
   - path: '@semantic-release/git'
