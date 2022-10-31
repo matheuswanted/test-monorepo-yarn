@@ -1,4 +1,4 @@
-import { Vehicle } from "@matheuswanted-test-mono-repo/models";
+import { Vehicle } from "@matheuswanted/test-mono-repo-models";
 
 export class App {
     public run(): Promise<void> {

@@ -1,15 +1,71 @@
-ci: true
-dry-run: false
+extends: semantic-release-monorepo
 branches:
   - name: main
 
 preset: 'conventionalcommits'
 tagFormat: '${version}'
+plugins:
+  - '@semantic-release/commit-analyzer'
+  - '@semantic-release/release-notes-generator'
+  - '@semantic-release/npm'
+  - '@semantic-release/exec'
+  - '@semantic-release/changelog'
+  - '@semantic-release/git'
+  - '@semantic-release/github'
+
+verifyConditions:
+  - '@semantic-release/changelog'
+  - '@semantic-release/git'
+  - '@semantic-release/github'
+  - '@semantic-release/npm'
+
+analyzeCommits:
+  - path: '@semantic-release/commit-analyzer'
+    config: '@commitlint/config-conventional'
+    releaseRules:
+      - scope: 'no-release'
+        release: false
+      - scope: 'refactor'
+        release: 'patch'
+
+generateNotes:
+  - path: '@semantic-release/release-notes-generator'
+    writerOpts:
+      groupBy: 'type'
+      commitGroupsSort:
+        - 'feat'
+        - 'fix'
+        - 'refactor'
+        - 'perf'
+      commitsSort: 'header'
+    types:
+      - type: 'fix'
+        section: 'BUG FIXES'
+      - type: 'refactor'
+        section: 'REFACTORED'
+      - type: 'doc'
+        section: 'DOCUMENTATION'
+      - type: 'chore'
+        hidden: true
+      - type: 'style'
+        hidden: true
+      - type: 'perf'
+        hidden: true
+      - type: 'test'
+        hidden: true
+    presetConfig: true
+
+prepare:
+  - path: '@semantic-release/npm'
+  - path: '@semantic-release/changelog'
+    changelogFile: 'CHANGELOG.md'
+  - path: '@semantic-release/git'
+    message: 'chore(release): ${nextRelease.version}'
+    assets:
+      - 'CHANGELOG.md'
+      - 'package.json'
 
 publish:
   - path: '@semantic-release/github'
-  - path: '@semantic-release/npm'
-    publish: false
-  - path: '@semantic-release/npm'
-    publish: false
-    pkgRoot: ./packages/app
+  - path: '@semantic-release/exec'
+    publishCmd: 'yarn publish'
